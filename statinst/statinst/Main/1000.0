@@ -1,0 +1,3 @@
+/* Event Clicked/selected - ~Quit  1000 */
+
+WinPostMsg(hwndDlg, WM_CLOSE, 0, 0);

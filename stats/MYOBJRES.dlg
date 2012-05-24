@@ -1,0 +1,151 @@
+#ifndef OS2_INCLUDED
+   #include <os2.h>
+#endif
+DLGINCLUDE 1 "H:\stats\statsr.h"
+
+DLGTEMPLATE 6000 LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "", 6000, 132, 18, 171, 128, NOT FS_DLGBORDER | FS_BORDER | 
+            FS_MOUSEALIGN | WS_VISIBLE, FCF_TITLEBAR | FCF_NOBYTEALIGN
+    BEGIN
+        MLE             "", 6001, 14, 100, 143, 20, MLS_READONLY | 
+                        MLS_HSCROLL | WS_GROUP
+        DEFPUSHBUTTON   "~OK", DID_CANCEL, 15, 10, 40, 11, BS_NOPOINTERFOCUS
+        LTEXT           "", 6004, 15, 75, 72, 8
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        LTEXT           "", 6002, 15, 91, 60, 8
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00000000L
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        LTEXT           "", 6005, 15, 59, 72, 8
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        LTEXT           "", 6003, 15, 68, 72, 8
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        LTEXT           "", 6006, 15, 52, 72, 8
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        PUSHBUTTON      "", 6009, 15, 23, 30, 11, BS_NOPOINTERFOCUS
+        PUSHBUTTON      "", 6010, 52, 23, 30, 11, BS_NOPOINTERFOCUS
+        PUSHBUTTON      "", 6012, 126, 23, 30, 11, BS_NOPOINTERFOCUS
+        PUSHBUTTON      "", 6011, 89, 23, 30, 11, BS_NOPOINTERFOCUS
+        LTEXT           "", 6008, 15, 36, 72, 8
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        LTEXT           "", 6007, 15, 43, 72, 8
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        LTEXT           "", 6013, 15, 84, 60, 8
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        GROUPBOX        "", 6014, 6, 6, 160, 122
+        RTEXT           "", 6015, 81, 91, 75, 8
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00000000L
+        RTEXT           "", 6016, 81, 84, 75, 8
+        RTEXT           "", 6017, 93, 75, 63, 8
+        RTEXT           "", 6018, 93, 68, 63, 8
+        RTEXT           "", 6019, 93, 59, 63, 8
+        RTEXT           "", 6020, 93, 52, 63, 8
+        RTEXT           "", 6021, 93, 43, 63, 8
+        RTEXT           "", 6022, 93, 36, 63, 8
+    END
+END
+
+DLGTEMPLATE 9000 LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "", 9000, 7, 36, 172, 87, NOT FS_DLGBORDER | FS_BORDER | 
+            FS_MOUSEALIGN | WS_VISIBLE, FCF_TITLEBAR | FCF_NOBYTEALIGN
+    BEGIN
+        MLE             "", 9001, 11, 60, 149, 20, MLS_READONLY | 
+                        MLS_HSCROLL
+        CTEXT           "", 9002, 12, 51, 149, 8
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00000000L
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        DEFPUSHBUTTON   "~OK", DID_CANCEL, 62, 8, 50, 14, BS_NOPOINTERFOCUS
+        LTEXT           "", 9004, 19, 26, 55, 8
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        LTEXT           "", 9003, 19, 34, 55, 8
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        LTEXT           "", 9005, 19, 42, 55, 8
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helv"
+        GROUPBOX        "", 9006, 5, 5, 162, 82
+        RTEXT           "", 9007, 79, 42, 72, 8
+        RTEXT           "", 9008, 79, 34, 72, 8
+        RTEXT           "", 9009, 79, 26, 72, 8
+    END
+END
+
+DLGTEMPLATE 9500 LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "About Stats ...", 9500, 99, 45, 192, 134, NOT FS_DLGBORDER | 
+            FS_BORDER | WS_VISIBLE, FCF_SYSMENU | FCF_TITLEBAR | 
+            FCF_NOBYTEALIGN
+    BEGIN
+        GROUPBOX        "", 1507, 6, 5, 180, 129
+        CTEXT           "Gary L. Robinson", 1510, 16, 84, 160, 9, DT_VCENTER
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helvetica"
+        CTEXT           "P.O. Box 359", 1511, 15, 76, 160, 9, DT_VCENTER
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helvetica"
+        CTEXT           "Christiansburg, OH  45389", 1512, 15, 69, 160, 9, 
+                        DT_VCENTER
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helvetica"
+        CTEXT           "Internet : grobin@iname.com", 1514, 8, 56, 175, 9, 
+                        DT_VCENTER
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x000000FFL
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helvetica"
+        CTEXT           "$15.00 through BMT Micro", 1508, 12, 105, 164, 8
+        CTEXT           "http://www.coax.net/people/grobin", 1901, 9, 29, 
+                        171, 8
+        CTEXT           "Web page for updates and betas :", 1902, 9, 37, 171, 
+                        8
+        CTEXT           "http://www.bmtmicro.com", 1903, 9, 97, 172, 8
+        CTEXT           "Stats ver. 1.03", 1904, 11, 115, 166, 11, 
+                        DT_VCENTER
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x007F327FL
+                        PRESPARAMS PP_FONTNAMESIZE, "12.Times New Roman"
+        CTEXT           "Internet : grobin@coax.net", 1906, 7, 48, 176, 9, 
+                        DT_VCENTER
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x000000FFL
+                        PRESPARAMS PP_FONTNAMESIZE, "10.Helvetica"
+        PUSHBUTTON      "~OK", 9501, 75, 10, 40, 14, BS_NOPOINTERFOCUS
+    END
+END
+
+DLGTEMPLATE 4300 LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Settings for Stats", 4300, 117, 16, 242, 229, WS_VISIBLE, 
+            FCF_TITLEBAR | FCF_NOBYTEALIGN
+    BEGIN
+        ENTRYFIELD      "", 4315, 16, 29, 125, 8, ES_CENTER | ES_MARGIN | 
+                        ES_UNREADABLE
+        CHECKBOX        "Disable Stats completely", 4303, 26, 204, 132, 10, 
+                        BS_NOPOINTERFOCUS
+        AUTOCHECKBOX    "Disable folder and tree popup stats", 4304, 36, 194, 
+                        164, 10, BS_NOPOINTERFOCUS
+        AUTOCHECKBOX    "Disable file popup stats", 4305, 36, 184, 111, 10, 
+                        BS_NOPOINTERFOCUS
+        AUTOCHECKBOX    "Disable titlebar stats", 4306, 36, 174, 112, 10, 
+                        BS_NOPOINTERFOCUS
+        GROUPBOX        " Disable stats ", 4307, 14, 170, 215, 54
+        AUTOCHECKBOX    "Show total number of files", 4308, 26, 145, 132, 10, 
+                        BS_NOPOINTERFOCUS
+        AUTOCHECKBOX    "Show total number of bytes", 4309, 26, 134, 174, 10, 
+                        BS_NOPOINTERFOCUS
+        AUTOCHECKBOX    "Show total number of dirs (sub folders)", 4310, 26, 
+                        124, 183, 10, BS_NOPOINTERFOCUS
+        AUTOCHECKBOX    "Show total number of all objects", 4311, 26, 114, 
+                        173, 10, BS_NOPOINTERFOCUS
+        AUTOCHECKBOX    "Show full path for folder", 4312, 26, 104, 128, 10, 
+                        BS_NOPOINTERFOCUS
+        DEFPUSHBUTTON   "~OK", 4301, 98, 7, 40, 14, BS_NOPOINTERFOCUS
+        LTEXT           "Registration code", 4316, 146, 27, 80, 8
+        GROUPBOX        " Title bar display ", 4313, 14, 71, 215, 94
+        CHECKBOX        "Don't show folder stats when ...", 4319, 26, 94, 
+                        180, 10, BS_NOPOINTERFOCUS
+        AUTORADIOBUTTON "Folder has no files or sub folders", 4317, 36, 84, 
+                        177, 10, BS_NOPOINTERFOCUS | WS_TABSTOP
+        AUTORADIOBUTTON "Folder is completely empty", 4318, 36, 74, 178, 10, 
+                        BS_NOPOINTERFOCUS | WS_TABSTOP
+        AUTORADIOBUTTON "mm/dd/yy", 4314, 26, 48, 54, 10, BS_NOPOINTERFOCUS | 
+                        WS_GROUP | WS_TABSTOP
+        AUTORADIOBUTTON "dd/mm/yy", 4320, 87, 48, 54, 10, BS_NOPOINTERFOCUS | 
+                        WS_GROUP | WS_TABSTOP
+        AUTORADIOBUTTON "yy/mm/dd", 4321, 148, 48, 54, 10, BS_NOPOINTERFOCUS | 
+                        WS_GROUP | WS_TABSTOP
+        GROUPBOX        " File date format ", 4302, 14, 45, 215, 22
+    END
+END

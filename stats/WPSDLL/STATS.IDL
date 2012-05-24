@@ -1,0 +1,697 @@
+
+// =====================================================================    
+//   STATS.IDL - A WorkFrame/2* Quickstart WPS/SOM application             
+//
+
+
+//# *******************************************************
+//# *******************************************************
+//# *******************************************************
+//# ********************* FOLDER **************************
+//# *******************************************************
+//# *******************************************************
+//# *******************************************************
+//# *******************************************************
+
+
+#ifndef stats_idl
+#define stats_idl
+
+
+#include "wpfolder.idl"
+#include "wpfsys.idl"
+#include <somcls.idl>
+#include "wpdisk.idl"
+#include "wprootf.idl"
+
+
+
+interface M_stats;
+
+interface stats : WPFolder
+{
+
+
+#ifdef __SOMIDL__
+  implementation {
+
+    //#============================================================================#
+    //# Release order -- specify the release order for any new methods, including  #
+    //#                  the _get and _set accessor methods for each attribute.    #
+    //#============================================================================#
+
+    //#   releaseorder:
+
+    //#============================================================================#
+    //# Class modifier statements
+    //#============================================================================#
+          externalstem = stats; 
+          local; 
+          externalprefix = statsX_; 
+          majorversion = 1; 
+          minorversion = 1; 
+          filestem = stats;
+          metaclass = M_stats;
+          callstyle = oidl;
+
+
+    //# ================================================================== #
+    //# Passthru Statements:                                               #
+    //# Include any blocks of code that the SOM compiler should pass       #
+    //# verbatim to the binding files it generates.                        #
+    //# ================================================================== #
+    
+    passthru C_ih_before =  ""      //# Internal definitions for this object 
+   " /* PM and OS2 include directives */"
+   "   #define INCL_WIN"
+   "   #define INCL_DOS"
+   "   #define INCL_GPIBITMAPS"
+   "   #define INCL_DOSMODULEMGR"
+   "   #define INCL_DOSERRORS"
+   "   #define INCL_DOSFILEMGR"
+   "   #define INCL_DOSDEVICES"
+   "   #define INCL_DOSDEVIOCTL"
+   "   #define INCL_WININPUT"
+   "   #define INCL_DOSPROCESS"
+   "   #define INCL_WINWINDOWMGR"
+   "   #include <os2.h>"
+   ""
+   " /* WPS include directives */"
+   "   #define INCL_WPCLASS"
+   "   #define INCL_WPFOLDER"
+   "   #include <pmwp.h>"
+   "   #include <wpdesk.h>"
+   "   #include <wprootf.h>"
+   "   #include <wpdisk.h>"
+   "   #include <wpobject.h>"
+   "   #include <wpshadow.h>"
+   "   #include <wpdataf.h>"
+   "   #include <wptemps.h>"
+   "   #include <wppgm.h>"
+   "   #include <wpdrives.h>"
+   ""
+   " /* C include directives */"
+   "   #include <stdio.h>"
+
+   ""
+   "/* About STATS */"
+   "   #define ID_ABOUTSTATSDLG    9500"
+   "   #define ID_ABOUTSTATSOK      9501"
+
+
+   ""
+   "/* Folder Stats dialog */"
+   "   #define ID_DLG_STATSF               9000"
+   "   #define ID_DLG_FDTEXT                 9001"
+   "   #define ID_DLG_FDTEXT2                9002"
+   "   #define ID_DLG_FDTEXT3                9003"
+   "   #define ID_DLG_FDTEXT3NUM           9008"
+   "   #define ID_DLG_FDTEXT4                9004"
+   "   #define ID_DLG_FDTEXT4NUM           9009"
+   "   #define ID_DIRCOUNT                 9005"
+   "   #define ID_DIRCOUNTNUM            9007"
+   
+   ""
+   "/* Menu resource IDs Folder objects */"
+   "   #define IDM_STATSMAIN           (WPMENUID_USER + 7500)"
+   "   #define ID_STATSMAIN             (WPMENUID_USER + 7501)"
+   "   #define ID_SSTATSMAIN            (WPMENUID_USER + 7502)"
+   "   #define ID_SSTATSABOUT         (WPMENUID_USER + 7503)"
+   "   #define ID_DTFSTATS              (WPMENUID_USER + 7504)"
+   "   #define ID_DTTSTATS              (WPMENUID_USER + 7505)"
+   "   #define IDM_STATSMAINNS        (WPMENUID_USER + 7506)"
+   
+   ""
+   "/* Menu resource IDs File object */"
+   "   #define IDM_STATSFILE           (WPMENUID_USER + 8500)"
+   "   #define ID_STATSFILE            (WPMENUID_USER + 8501)"
+
+   ""
+   "/* Menu resource IDs Folder object */"
+   "   #define IDM_STATSFOLDER           (WPMENUID_USER + 8600)"
+   "   #define ID_STATSFOLDER            (WPMENUID_USER + 8601)"
+   "   #define ID_SSTATSFOLDER            (WPMENUID_USER + 8602)"
+   "   #define ID_SSTATSTREE            (WPMENUID_USER +  8603)"
+   "   #define IDM_STATSFOLDERNF       (WPMENUID_USER + 8604)"
+
+   ""
+   "/* Menu resource IDs Disk object */"
+   "   #define IDM_STATSFOLDERD           (WPMENUID_USER + 8650)"
+   "   #define ID_STATSFOLDERD            (WPMENUID_USER + 8651)"
+   "   #define ID_SSTATSFOLDERD            (WPMENUID_USER + 8652)"
+   "   #define ID_SSTATSTREED            (WPMENUID_USER +  8653)"
+   "   #define IDM_STATSFOLDERNFD       (WPMENUID_USER + 8654)"
+
+   "/* Settings page */"
+   "   #define ID_STATSSETDLG           4300"
+   "   #define ID_STATSOK                 4301"
+   "   #define ID_DISABLEALL              4303"
+   "   #define ID_DISABLEFOLDTREEP    4304"
+   "   #define ID_DISABLEFILEP            4305"
+   "   #define ID_DISABLETB                4306"
+   "   #define ID_SHOWFILES               4308"
+   "   #define ID_SHOWBYTES              4309"
+   "   #define ID_SHOWDIRS                4310"
+   "   #define ID_SHOWOBJS               4311"
+   "   #define ID_SHOWPATH               4312"
+   "   #define ID_USASTYLE                4314"
+   "   #define ID_STATSREGENTRY        4315"
+   "   #define ID_NOSHOWFF               4317"
+   "   #define ID_NOSHOWFFO             4318"
+   "   #define ID_NOSHOW                  4319"
+   "   #define ID_EUROPEANSTYLE       4320"
+   "   #define ID_EUROPEANSTYLE2     4321"
+
+   ""
+   "/* Icon resource IDs */"
+   "   #define ID_DLG_STATS                6000"
+   "   #define ID_DLG_TEXT                 6001"
+   "   #define ID_DLG_TEXT2                6002"
+   "   #define ID_DLG_TEXT2NUM                6015"
+   "   #define ID_DLG_TEXT3                6003"
+   "   #define ID_DLG_TEXT3NUM                6018"
+   "   #define ID_DLG_TEXT4                6004"
+   "   #define ID_DLG_TEXT4NUM                6017"
+   "   #define ID_LCDATE                   6005"
+   "   #define ID_LCDATENUM                   6019"
+   "   #define ID_LCTIME                   6006"
+   "   #define ID_LCTIMENUM                   6020"
+   "   #define ID_LADATE                   6007"
+   "   #define ID_LADATENUM                   6021"
+   "   #define ID_LATIME                   6008"
+   "   #define ID_LATIMENUM                   6022"
+   "   #define ID_FATA                     6009"
+   "   #define ID_FATH                     6010"
+   "   #define ID_FATR                     6011"
+   "   #define ID_FATS                     6012"
+   "   #define ID_EASIZE                   6013"
+   "   #define ID_EASIZENUM                   6016"
+   
+   ""
+   " /* General constants */"
+   "   #define MY_SOMCLASSNAME             \"stats\""
+   "   #define RESOURCE_MODULE             \"STATSR\""
+   "   #define THREAD_STACK_SIZE           65536"
+   "   #define BUFFERSIZE                  256"
+   ""
+   "/* String resource IDs */"
+   "   #define IDS_BASE                    1000"
+
+   ""
+   "/* Product info dialog IDs */"
+   "   #define IDD_BASE                    2000"
+
+   ""
+   "/* Prototypes */"
+   "   MRESULT APIENTRY fnProdInfoWndProc (HWND, ULONG, MPARAM, MPARAM);"
+   "   int SOMprintf(const unsigned char*,...); ";
+
+
+
+    passthru C_h_before =  "";   //# Public definitions for this object  
+
+
+    //# ================================================================== #
+    //# Internal instance variables - data only used by the class's        #
+    //# methods and not by client programs or sublasses' methods.          #
+    //# ================================================================== #
+    //# PSZ pszMyRealName;            /* This object's real name */
+
+
+    //# ================================================================== #
+    //# Method modifiers                                                   #
+    //# ================================================================== #
+    wpModifyPopupMenu:     override;
+    wpMenuItemSelected:    override;    
+    wpViewObject:             override;    
+    wpOpen:             override;    
+    wpAddToContent:         override;    
+    wpDeleteFromContent:   override;    
+
+    //# ================================================================== #
+    //# Attribute modifiers                                                #
+    //# ================================================================== #
+
+
+  };
+#endif /* __SOMIDL__ */
+};
+
+
+
+//# ================================================================== #
+//# Metaclass section:                                                 #
+//# Describe the metaclass of My_Object.  A metaclass allows this      #
+//# object to define its own constructor, class methods, and data.     #
+//# ================================================================== #
+
+interface M_stats
+
+{
+
+  // New types -- Define OS/2 type names to the class interface
+  typedef unsigned long  HMODULE;
+  typedef unsigned long  HPOINTER;
+  typedef string         PSZ;
+
+  // New class methods
+  // HMODULE clsGetResourceModule();
+
+  //# Class attributes
+  //# attribute HMODULE  hmodResource; //# Resource module handle for stats 
+
+
+#ifdef __SOMIDL__
+  implementation {
+
+    releaseorder: _get_hmodResource, _set_hmodResource;
+                  //# _get_hMyIcon, _set_hMyIcon,
+                  //# _get_pszMyTitle, _set_pszMyTitle,
+                  //# clsGetResourceModule;
+    
+
+    //# instance variables
+    //# HMODULE  hmodResource; //# Resource module handle for stats
+
+
+    //# Class Modifiers
+    externalstem = stats;
+    local; 
+    externalprefix = statsX_; 
+    functionprefix = statsC_; 
+    majorversion = 1; 
+    minorversion = 1; 
+    filestem = stats;
+    callstyle = oidl;
+
+
+    //# Class method Modifiers
+    wpclsInitData:         override;
+    wpclsUnInitData:       override;
+
+
+
+    //# Attribute Modifiers.
+    //# pszMyTitle:   noget, noset;  //# Provide own get and set methods
+
+  };
+#endif /* __SOMIDL__ */
+};
+
+#endif  /* stats_idl */
+
+
+
+//# *******************************************************
+//# *******************************************************
+//# *******************************************************
+//# ********************* FILE *****************************
+//# *******************************************************
+//# *******************************************************
+//# *******************************************************
+//# *******************************************************
+
+
+
+
+#ifndef statsfile_idl
+#define statsfile_idl
+
+
+#include "wpdataf.idl"
+#include "wpfsys.idl"
+#include <somcls.idl>
+#include "wpdisk.idl"
+#include "wprootf.idl"
+
+
+
+interface M_statsfile;
+
+interface statsfile : WPDataFile
+{
+
+
+#ifdef __SOMIDL__
+  implementation {
+
+    //#============================================================================#
+    //# Release order -- specify the release order for any new methods, including  #
+    //#                  the _get and _set accessor methods for each attribute.    #
+    //#============================================================================#
+
+    //#   releaseorder:
+
+    //#============================================================================#
+    //# Class modifier statements
+    //#============================================================================#
+          externalstem = statsfile; 
+          local; 
+          externalprefix = statsfileX_; 
+          majorversion = 1; 
+          minorversion = 1; 
+          filestem = stats;
+          metaclass = M_statsfile;
+          callstyle = oidl;
+
+
+    //# ================================================================== #
+    //# Passthru Statements:                                               #
+    //# Include any blocks of code that the SOM compiler should pass       #
+    //# verbatim to the binding files it generates.                        #
+    //# ================================================================== #
+    
+    passthru C_ih_before =  ""      //# Internal definitions for this object 
+   " /* PM and OS2 include directives */"
+   "   #define INCL_WIN"
+   "   #define INCL_DOS"
+   "   #define INCL_GPIBITMAPS"
+   "   #define INCL_DOSMODULEMGR"
+   "   #include <os2.h>"
+   ""
+   " /* WPS include directives */"
+   "   #define INCL_WPCLASS"
+   "   #define INCL_WPFOLDER"
+   "   #include <pmwp.h>"
+   ""
+   " /* C include directives */"
+   "   #include <stdio.h>"
+
+
+   ""
+   " /* General constants */"
+   "   #define RESOURCE_MODULE             \"STATSR\""
+   "   #define THREAD_STACK_SIZE           65536"
+   "   #define BUFFERSIZE                  256"
+   ""
+   "/* String resource IDs */"
+   "   #define IDS_BASE                    1000"
+
+   ""
+   "/* Product info dialog IDs */"
+   "   #define IDD_BASE                    2000"
+
+   ""
+   "/* Prototypes */"
+   "   MRESULT APIENTRY fnProdInfoWndProc (HWND, ULONG, MPARAM, MPARAM);"
+   "   int SOMprintf(const unsigned char*,...); ";
+
+
+
+    passthru C_h_before =  "";   //# Public definitions for this object  
+
+
+    //# ================================================================== #
+    //# Internal instance variables - data only used by the class's        #
+    //# methods and not by client programs or sublasses' methods.          #
+    //# ================================================================== #
+    //# PSZ pszMyRealName;            /* This object's real name */
+
+
+    //# ================================================================== #
+    //# Method modifiers                                                   #
+    //# ================================================================== #
+    wpInitData:         override;
+    wpUnInitData:       override;
+    wpModifyPopupMenu:  override;
+    wpMenuItemSelected: override;    
+
+    //# ================================================================== #
+    //# Attribute modifiers                                                #
+    //# ================================================================== #
+
+
+  };
+#endif /* __SOMIDL__ */
+};
+
+
+
+//# ================================================================== #
+//# Metaclass section:                                                 #
+//# Describe the metaclass of My_Object.  A metaclass allows this      #
+//# object to define its own constructor, class methods, and data.     #
+//# ================================================================== #
+
+interface M_statsfile
+
+{
+
+  // New types -- Define OS/2 type names to the class interface
+  typedef unsigned long  HMODULE;
+  typedef unsigned long  HPOINTER;
+  typedef string         PSZ;
+
+  // New class methods
+  //# HMODULE clsGetResourceModule();
+
+  //# Class attributes
+  //# attribute HMODULE  hmodResource; //# Resource module handle for stats 
+
+
+#ifdef __SOMIDL__
+  implementation {
+
+    releaseorder: _get_hmodResource, _set_hmodResource;
+                  //# _get_hMyIcon, _set_hMyIcon,
+                  //# _get_pszMyTitle, _set_pszMyTitle,
+                  //# clsGetResourceModule;
+    
+
+    //# instance variables
+    //# HMODULE  hmodResource; //# Resource module handle for stats
+
+
+    //# Class Modifiers
+    externalstem = statsfile;
+    local; 
+    externalprefix = statsfileX_; 
+    functionprefix = statsfileC_; 
+    majorversion = 1; 
+    minorversion = 1; 
+    filestem = stats;
+    callstyle = oidl;
+
+
+    //# Class method Modifiers
+    wpclsInitData:         override;
+    wpclsUnInitData:       override;
+
+
+
+    //# Attribute Modifiers.
+    //# pszMyTitle:   noget, noset;  //# Provide own get and set methods
+
+  };
+#endif /* __SOMIDL__ */
+};
+
+#endif  /* statsfile_idl */
+
+
+
+
+//# *******************************************************
+//# *******************************************************
+//# *******************************************************
+//# *******************************************************
+//# ********************** DISKS **************************
+//# *******************************************************
+//# *******************************************************
+//# *******************************************************
+
+
+
+
+#ifndef statsdisk_idl
+#define statsdisk_idl
+
+
+#include "wpfolder.idl"
+#include "wpdisk.idl"
+#include "wpfsys.idl"
+#include <somcls.idl>
+#include "wprootf.idl"
+
+
+
+interface M_statsdisk;
+
+interface statsdisk : WPDisk
+{
+
+
+#ifdef __SOMIDL__
+  implementation {
+
+    //#============================================================================#
+    //# Release order -- specify the release order for any new methods, including  #
+    //#                  the _get and _set accessor methods for each attribute.    #
+    //#============================================================================#
+
+    //#   releaseorder:
+
+    //#============================================================================#
+    //# Class modifier statements
+    //#============================================================================#
+          externalstem = statsdisk; 
+          local; 
+          externalprefix = statsdiskX_; 
+          majorversion = 1; 
+          minorversion = 1; 
+          filestem = stats;
+          metaclass = M_statsdisk;
+          callstyle = oidl;
+
+
+    //# ================================================================== #
+    //# Passthru Statements:                                               #
+    //# Include any blocks of code that the SOM compiler should pass       #
+    //# verbatim to the binding files it generates.                        #
+    //# ================================================================== #
+    
+    passthru C_ih_before =  ""      //# Internal definitions for this object 
+   " /* PM and OS2 include directives */"
+   "   #define INCL_WIN"
+   "   #define INCL_DOS"
+   "   #define INCL_GPIBITMAPS"
+   "   #define INCL_DOSMODULEMGR"
+   "   #include <os2.h>"
+   ""
+   " /* WPS include directives */"
+   "   #define INCL_WPCLASS"
+   "   #define INCL_WPFOLDER"
+   "   #include <pmwp.h>"
+   ""
+   " /* C include directives */"
+   "   #include <stdio.h>"
+
+
+   ""
+   " /* General constants */"
+   "   #define RESOURCE_MODULE             \"STATSR\""
+   "   #define THREAD_STACK_SIZE           65536"
+   "   #define BUFFERSIZE                  256"
+   ""
+   "/* String resource IDs */"
+   "   #define IDS_BASE                    1000"
+
+   ""
+   "/* Product info dialog IDs */"
+   "   #define IDD_BASE                    2000"
+
+   ""
+   "/* Prototypes */"
+   "   MRESULT APIENTRY fnProdInfoWndProc (HWND, ULONG, MPARAM, MPARAM);"
+   "   int SOMprintf(const unsigned char*,...); ";
+
+
+
+    passthru C_h_before =  "";   //# Public definitions for this object  
+
+
+    //# ================================================================== #
+    //# Internal instance variables - data only used by the class's        #
+    //# methods and not by client programs or sublasses' methods.          #
+    //# ================================================================== #
+    //# PSZ pszMyRealName;            /* This object's real name */
+
+
+    //# ================================================================== #
+    //# Method modifiers                                                   #
+    //# ================================================================== #
+    wpModifyPopupMenu:  override;
+    wpMenuItemSelected: override;    
+    wpViewObject:             override;    
+
+    //# ================================================================== #
+    //# Attribute modifiers                                                #
+    //# ================================================================== #
+
+
+  };
+#endif /* __SOMIDL__ */
+};
+
+
+
+//# ================================================================== #
+//# Metaclass section:                                                 #
+//# Describe the metaclass of My_Object.  A metaclass allows this      #
+//# object to define its own constructor, class methods, and data.     #
+//# ================================================================== #
+
+interface M_statsdisk
+
+{
+
+  // New types -- Define OS/2 type names to the class interface
+  typedef unsigned long  HMODULE;
+  typedef unsigned long  HPOINTER;
+  typedef string         PSZ;
+
+  // New class methods
+  //# HMODULE clsGetResourceModule();
+
+  //# Class attributes
+  //# attribute HMODULE  hmodResource; //# Resource module handle for stats 
+
+
+#ifdef __SOMIDL__
+  implementation {
+
+    releaseorder: _get_hmodResource, _set_hmodResource;
+                  //# _get_hMyIcon, _set_hMyIcon,
+                  //# _get_pszMyTitle, _set_pszMyTitle,
+                  //# clsGetResourceModule;
+    
+
+    //# instance variables
+    //# HMODULE  hmodResource; //# Resource module handle for stats
+
+
+    //# Class Modifiers
+    externalstem = statsdisk;
+    local; 
+    externalprefix = statsdiskX_; 
+    functionprefix = statsdiskC_; 
+    majorversion = 1; 
+    minorversion = 1; 
+    filestem = stats;
+    callstyle = oidl;
+
+
+    //# Class method Modifiers
+    wpclsInitData:         override;
+    wpclsUnInitData:       override;
+
+
+
+    //# Attribute Modifiers.
+    //# pszMyTitle:   noget, noset;  //# Provide own get and set methods
+
+  };
+#endif /* __SOMIDL__ */
+};
+
+#endif  /* statsdisk_idl */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

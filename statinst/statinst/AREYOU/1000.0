@@ -1,0 +1,11 @@
+/* Event Clicked/selected - ~Continue with Uninstallation  1000 */
+
+
+if( WinQueryButtonCheckstate(hwndDlg,1002) )
+   DELETELIBPATH = TRUE;
+else   
+   DELETELIBPATH = FALSE;
+   
+UNINSTALLME = TRUE;
+
+WinPostMsg(hwndDlg, WM_CLOSE, 0, 0);

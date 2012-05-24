@@ -1,0 +1,26 @@
+/* Form events - Opened */
+
+
+{
+SWP swp, swpD;
+int dtWidth;
+int offX, offY;
+dtWidth = WinQuerySysValue(HWND_DESKTOP,SV_CXSCREEN);
+offX = 20;
+offY = 10;
+WinQueryWindowPos(WinQueryWindow(hwndDlg, QW_OWNER), (PSWP) &swp);
+WinQueryWindowPos(hwndDlg, (PSWP) &swpD);
+if( swp.x < 5 )
+   swp.x += ((-swp.x) + 1); 
+if( (swp.x+offX+swpD.cx) > (dtWidth-5) )
+   {
+   int over;
+   over = (swp.x+offX+swpD.cx) - (dtWidth-5);
+   offX = - (offX+over);   
+   }
+if( (swp.y-70) < 5 )
+   offY = - offY; 
+WinSetWindowPos(hwndDlg, HWND_TOP, 
+                swp.x+offX, swp.y-offY, 0, 0,
+		SWP_ACTIVATE | SWP_MOVE | SWP_SHOW );
+}

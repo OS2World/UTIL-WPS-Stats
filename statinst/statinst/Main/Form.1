@@ -1,0 +1,23 @@
+/* Form events - Opened */
+
+CHAR instDir[] = " :\\STATS";
+ULONG bdr;
+
+DosQuerySysInfo(QSV_BOOT_DRIVE, QSV_BOOT_DRIVE,
+      		(PVOID)&bdr, sizeof( bdr)) ;
+
+instDir[0] = (CHAR)(bdr + '@');      		
+
+// debugMsgStr(instDir, "instDir");
+WinSetDlgItemText(hwndDlg, 1003, instDir);
+
+/* Set selection 1003 Entry Field */
+WinSendDlgItemMsg(hwndDlg, 1003,
+                  EM_SETSEL,
+                  MPFROM2SHORT(0, strlen(instDir)), 0);
+
+PrfQueryProfileString(HINI_USERPROFILE, 
+                      "ZipZapIsInstalled", 
+                      "InstallationPath",
+		      "", cmdhrinstall, 
+		      CCHMAXPATH );

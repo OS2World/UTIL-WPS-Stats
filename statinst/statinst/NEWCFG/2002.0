@@ -1,0 +1,5 @@
+/* Event Clicked/selected - ~Cancel  2002 */
+
+
+ISCANCELLED = TRUE;
+WinPostMsg(hwndDlg, WM_CLOSE, 0, 0);

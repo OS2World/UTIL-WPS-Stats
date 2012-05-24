@@ -1,0 +1,4 @@
+/* Event Clicked/selected - ~Cancel  1002 */
+
+PATHRet = 0;
+WinDismissDlg( hwndDlg, TRUE );

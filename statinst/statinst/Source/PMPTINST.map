@@ -1,0 +1,27 @@
+Stack Allocation = 32768 bytes
+
+ PMPTINST.EXE
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000AA54H CODE32                 CODE 32-bit
+ 0001:0000AA54 000000030H _MSGSEG32              CODE 32-bit
+ 0002:00000000 000001100H DATA32                 DATA 32-bit
+ 0002:00001100 000000000H CTOR_DTOR1             DATA 32-bit
+ 0002:00001100 000000000H CTOR_DTOR2             DATA 32-bit
+ 0002:00001100 000000000H CTOR_DTOR3             DATA 32-bit
+ 0002:00001100 0000001C0H CONST32                CONST 32-bit
+ 0002:000012C0 00000000CH EDC1                   EDC_CLASS 32-bit
+ 0002:000012CC 000000330H EDC2                   EDC_CLASS 32-bit
+ 0002:000015FC 000000004H EDC3                   EDC_CLASS 32-bit
+ 0002:00001600 000000000H BSS32                  BSS 32-bit
+ 0002:00001600 000000828H c_common               BSS 32-bit
+ 0002:00001E30 000008000H STACK32                STACK 32-bit
+
+ Origin   Group
+ 0002:0   DGROUP
+ 0000:0   FLAT
+
+Program entry point at 0001:00003DC8
+
+Main.OBJ(Main.C) :  error L2029: 'WinCopyObject' : unresolved external
+

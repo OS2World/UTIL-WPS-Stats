@@ -1,0 +1,5 @@
+/* Event Clicked/selected - Update  2001 */
+
+UPDATECONFIG = TRUE;
+ISCANCELLED = FALSE;
+WinPostMsg(hwndDlg, WM_CLOSE, 0, 0);

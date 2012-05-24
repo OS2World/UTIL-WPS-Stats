@@ -1,0 +1,2 @@
+/* symbols for resource items */
+#define ID_MAINFORM  256

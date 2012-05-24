@@ -1,0 +1,45 @@
+:TARGET.SUFFIXES
+:TARGET.SUFFIXES
+:DEPENDENCY..IDL .c .obj 
+:TARGET.all
+:DEPENDENCY.
+.\stats.dll
+:RULE..IDL.c
+:ACTION.Compile::SOM Compiler
+:COMMAND.
+sc.exe -p -S65536 -C65536 -mnoint %s
+:RULE.{H:\stats\WPSDLL}.IDL.c
+:ACTION.Compile::SOM Compiler
+:COMMAND.
+sc.exe -p -S65536 -C65536 -mnoint %s
+:RULE..c.obj
+:ACTION.Compile::C++ Compiler
+:COMMAND.
+icc.exe /Ss /Gm /Ge- /Ms /C %s
+:RULE.{H:\stats\WPSDLL}.c.obj
+:ACTION.Compile::C++ Compiler
+:COMMAND.
+icc.exe /Ss /Gm /Ge- /Ms /C %s
+:TARGET..\stats.dll
+:DEPENDENCY.
+.\STATS.obj
+{$(LIB)}somtk.lib
+{$(LIB)}stats.def
+stats.mak
+:ACTION.Link::Linker
+:COMMAND.
+icc.exe @<<
+ /B" /st:65536 /noe"
+ /Festats.dll 
+ somtk.lib 
+ stats.def
+ .\STATS.obj
+<<
+:TARGET..\STATS.c
+:DEPENDENCY.
+H:\stats\WPSDLL\STATS.IDL
+stats.mak
+:TARGET..\STATS.obj
+:DEPENDENCY.
+.\STATS.c
+stats.mak

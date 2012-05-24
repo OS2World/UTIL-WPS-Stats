@@ -1,0 +1,13 @@
+#include <os2.h>
+
+rcinclude AREYOU.RC
+rcinclude Main.RC
+rcinclude NEWCFG.RC
+rcinclude NPATH.RC
+HELPTABLE  1
+  BEGIN
+    HELPITEM  259, 259, 0
+    HELPITEM  256, 256, 0
+    HELPITEM  258, 258, 0
+    HELPITEM  257, 257, 0
+  END

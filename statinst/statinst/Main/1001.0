@@ -1,0 +1,107 @@
+/* Event Clicked/selected - ~Uninstall  1001 */
+
+CHAR curPath[CCHMAXPATH]; 
+CHAR cfig[] = " :\\config.sys";
+CHAR cfigTMP[] = " :\\config.$s$";
+CHAR cfigBAKUP[] = " :\\config.sta";
+ULONG bdri;
+INT ck, mark;
+
+
+
+PrfQueryProfileString(HINI_USERPROFILE, 
+                      "StatsIsInstalled", 
+                      "InstallationPath",
+		      "", cmdhrinstall, 
+		      CCHMAXPATH);
+
+if( strlen(cmdhrinstall) == 0 )		      
+   {
+   msgOK("Attention! Stats does not seem to be installed!", "Make sure you have deleted the LIBPATH= reference for ZipZap.");
+   PrfWriteProfileString(HINI_USERPROFILE, "StatsIsInstalled", NULL, NULL);
+   WinReplaceObjectClass("WPFolder", "stats", FALSE);
+   WinDeregisterObjectClass("stats");
+   WinReplaceObjectClass("WPDataFile", "statsfile", FALSE);
+   WinDeregisterObjectClass("statsfile");
+   WinReplaceObjectClass("WPDisk", "statsdisk", FALSE);
+   WinDeregisterObjectClass("statsdisk");
+   return(0);
+   }		          
+
+
+UNINSTALLME = FALSE;
+DELETELIBPATH = TRUE;
+	
+{
+   USHORT usReturn;
+   HWND hNewFrame;
+   hNewFrame = OpenAREYOU(hwndDlg, 0);
+   usReturn = (USHORT) WinProcessDlg(hNewFrame);
+}
+
+if( !UNINSTALLME )
+   return(0);
+
+
+DosQuerySysInfo(QSV_BOOT_DRIVE, QSV_BOOT_DRIVE,
+      		(PVOID)&bdri, sizeof( bdri)) ;
+
+cfig[0] = (CHAR)(bdri + '@');
+cfigTMP[0] = (CHAR)(bdri + '@');
+cfigBAKUP[0] = (CHAR)(bdri + '@');
+
+
+WinReplaceObjectClass("WPFolder", "stats", FALSE);
+WinDeregisterObjectClass("stats"); 
+WinReplaceObjectClass("WPDataFile", "statsfile", FALSE);
+WinDeregisterObjectClass("statsfile");
+WinReplaceObjectClass("WPDisk", "statsdisk", FALSE);
+WinDeregisterObjectClass("statsdisk");
+
+
+PrfWriteProfileString(HINI_USERPROFILE, "StatsIsInstalled", NULL, NULL);
+
+
+if( strlen(cmdhrinstall) > 3 && cmdhrinstall[strlen(cmdhrinstall)-1] == '\\')
+   cmdhrinstall[strlen(cmdhrinstall)-1] = '\0'; 
+
+
+if( DELETELIBPATH )   
+   { 
+   if( strlen(cmdhrinstall) > 1 )
+      removeFromFile(cfig, cfigTMP, cmdhrinstall, "LIBPATH=");
+
+   rc = DosCopy(cfig, cfigBAKUP, DCPY_EXISTING);
+   }
+else
+   {
+   rc = 0;   
+   }
+
+if( rc == 0 )
+   {
+   if( DELETELIBPATH )   
+      { 
+      setFileAttrib(cfig, FILE_NORMAL);   
+      rc = DosCopy(cfigTMP, cfig, DCPY_EXISTING);
+      if( rc == 0 )
+         {
+         DosDelete(cfigTMP);
+         setFileAttrib(cfigBAKUP, FILE_NORMAL);   
+         msgOK("Attention!", "Stats has been deregistered! Reboot and delete files to complete uninstallation.");
+         exit(0);
+         }
+      else
+         msgOK("Error!", "Uninstallation procedure partially or totally failed!");
+      }
+   else
+      {
+      msgOK("Attention!", "Stats has been deregistered!  You may need to Reboot to a command line to delete the files to complete uninstallation since you left the LIBPATH reference in your config.sys.");
+      exit(0);
+      }      
+   }
+else   
+   msgOK("Error!", "Uninstallation procedure partially or totally failed!");
+
+
+

@@ -1,0 +1,6 @@
+/* Code sections - Extra include files */
+
+#include "global.h"
+#include "NPATH.h"
+#include "NEWCFG.h"
+#include "AREYOU.h"

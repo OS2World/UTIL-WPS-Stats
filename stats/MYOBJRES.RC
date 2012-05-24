@@ -1,0 +1,68 @@
+/*  resources */
+
+#include "stats.ih"
+
+
+MENU IDM_STATSMAIN
+BEGIN
+   SUBMENU  "Stats Settings", ID_STATSMAIN
+      BEGIN
+      MENUITEM "Stats Settings ...", ID_SSTATSMAIN
+      MENUITEM "About Stats ...", ID_SSTATSABOUT
+      MENUITEM "Desktop folder stats", ID_DTFSTATS
+      MENUITEM "Desktop tree stats", ID_DTTSTATS
+      END
+END
+
+
+MENU IDM_STATSMAINNS
+BEGIN
+   SUBMENU  "Stats Settings", ID_STATSMAIN
+      BEGIN
+      MENUITEM "Stats Settings ...", ID_SSTATSMAIN
+      MENUITEM "About Stats ...", ID_SSTATSABOUT
+      END
+END
+
+
+MENU IDM_STATSFILE
+BEGIN
+   MENUITEM "File stats", ID_STATSFILE
+END
+
+
+MENU IDM_STATSFOLDER
+BEGIN
+   SUBMENU "Folder stats", ID_STATSFOLDER
+      BEGIN
+      MENUITEM "Folder stats", ID_SSTATSFOLDER
+      MENUITEM "Tree stats", ID_SSTATSTREE
+      END
+END
+
+
+MENU IDM_STATSFOLDERNF
+BEGIN
+   MENUITEM  "Folder stats", ID_STATSFOLDER
+END
+
+
+MENU IDM_STATSFOLDERD
+BEGIN
+   SUBMENU "Folder stats", ID_STATSFOLDERD
+      BEGIN
+      MENUITEM "Folder stats", ID_SSTATSFOLDERD
+      MENUITEM "Tree stats", ID_SSTATSTREED
+      END
+END
+
+
+MENU IDM_STATSFOLDERNFD
+BEGIN
+   MENUITEM  "Folder stats", ID_STATSFOLDERD
+END
+
+
+RCINCLUDE "myobjres.dlg"
+
+

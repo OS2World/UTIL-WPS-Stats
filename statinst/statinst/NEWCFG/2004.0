@@ -1,0 +1,4 @@
+/* Event Clicked/selected - Do not Update  2004 */
+
+ISCANCELLED = FALSE;
+WinPostMsg(hwndDlg, WM_CLOSE, 0, 0);

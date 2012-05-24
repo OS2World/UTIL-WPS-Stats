@@ -1,0 +1,423 @@
+00000422
+1997-01-10; 04:02:32; GARY L. ROBINSON; ADD; CMDHINST\Main-Form layout; ; <Main\Form>
+1997-01-10; 04:05:21; GARY L. ROBINSON; ADD; CMDHINST\Main-Event Clicked/selected - ~Quit  1000; ; <Main\1000.0>
+1997-01-10; 04:05:25; GARY L. ROBINSON; CHG; CMDHINST\Main-Form layout; ; <Main\Form>
+1997-01-10; 04:05:25; GARY L. ROBINSON; ADD; CMDHINST\Main-Form help info; ; <Main\Form.fin>
+1997-01-10; 04:13:18; GARY L. ROBINSON; CHG; CMDHINST\Main-Form layout; ; <Main\Form>
+1997-01-10; 04:14:17; GARY L. ROBINSON; CHG; CMDHINST\Main-Form layout; ; <Main\Form>
+1997-01-10; 04:39:13; GARY L. ROBINSON; ADD; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-10; 04:46:43; GARY L. ROBINSON; ADD; CMDHINST\Main-Code sections - Extra include files; ; <Main\Form.34>
+1997-01-10; 04:47:08; GARY L. ROBINSON; CHG; CMDHINST\Main-Code sections - Extra include files; ; <Main\Form.34>
+1997-01-10; 04:50:01; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-10; 04:51:28; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-10; 04:57:13; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-10; 04:59:38; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-10; 05:05:01; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-10; 05:09:32; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-10; 05:11:58; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-10; 05:15:16; GARY L. ROBINSON; ADD; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-10; 05:16:10; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-10; 05:16:15; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-10; 05:17:17; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-10; 05:46:26; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-10; 05:52:02; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-10; 05:52:44; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-10; 05:56:35; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-10; 17:17:01; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-10; 18:15:36; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-10; 18:16:24; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-11; 04:32:25; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-11; 04:38:16; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-11; 04:38:52; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-11; 04:39:14; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-11; 04:42:04; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-11; 04:44:28; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-11; 04:47:14; GARY L. ROBINSON; ADD; CMDHINST\NPATH-Form layout; ; <NPATH\Form>
+1997-01-11; 04:56:04; GARY L. ROBINSON; CHG; CMDHINST\NPATH-Form layout; ; <NPATH\Form>
+1997-01-11; 04:56:04; GARY L. ROBINSON; ADD; CMDHINST\NPATH-Form help info; ; <NPATH\Form.fin>
+1997-01-11; 04:58:11; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-11; 04:58:25; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Code sections, Extra include files; ; <Main\Form.34>
+1997-01-11; 04:59:22; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-11; 05:04:20; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-11; 05:10:32; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-11; 05:10:55; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-11; 05:15:23; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-11; 05:16:09; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-11; 05:27:55; GARY L. ROBINSON; ADD; CMDHINST\NPATH-Event Clicked/selected - C~ontinue  1001; ; <NPATH\1001.0>
+1997-01-11; 05:28:23; GARY L. ROBINSON; ADD; CMDHINST\NPATH-Event Clicked/selected - ~Cancel  1002; ; <NPATH\1002.0>
+1997-01-11; 05:30:18; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-11; 05:32:47; GARY L. ROBINSON; CHG; CMDHINST\NPATH-Event Clicked/selected - ~Cancel  1002; ; <NPATH\1002.0>
+1997-01-11; 05:33:05; GARY L. ROBINSON; CHG; CMDHINST\NPATH-Event Clicked/selected - C~ontinue  1001; ; <NPATH\1001.0>
+1997-01-11; 05:34:02; GARY L. ROBINSON; ADD; CMDHINST\NPATH-Form events - Closed; ; <NPATH\Form.2>
+1997-01-11; 05:35:22; GARY L. ROBINSON; ADD; CMDHINST\NPATH-Code sections - Extra include files; ; <NPATH\Form.34>
+1997-01-11; 05:37:06; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-11; 05:39:03; GARY L. ROBINSON; CHG; CMDHINST\NPATH-Form events - Closed; ; <NPATH\Form.2>
+1997-01-11; 05:40:05; GARY L. ROBINSON; ADD; CMDHINST\NPATH-Form events - Destroyed; ; <NPATH\Form.3>
+1997-01-11; 05:52:04; GARY L. ROBINSON; CHG; CMDHINST\NPATH-Event ~Cancel  1002, Clicked/selected; ; <NPATH\1002.0>
+1997-01-11; 05:53:24; GARY L. ROBINSON; CHG; CMDHINST\NPATH-Event ~Cancel  1002, Clicked/selected; ; <NPATH\1002.0>
+1997-01-11; 06:09:18; GARY L. ROBINSON; CHG; CMDHINST\NPATH-Form layout; ; <NPATH\Form>
+1997-01-11; 07:04:48; GARY L. ROBINSON; CHG; CMDHINST\NPATH-Event Clicked/selected - C~ontinue  1001; ; <NPATH\1001.0>
+1997-01-11; 07:05:07; GARY L. ROBINSON; CHG; CMDHINST\NPATH-Event Clicked/selected - ~Cancel  1002; ; <NPATH\1002.0>
+1997-01-11; 07:07:23; GARY L. ROBINSON; CHG; CMDHINST\NPATH-Form events - Destroyed; ; <NPATH\Form.3>
+1997-01-11; 07:07:42; GARY L. ROBINSON; CHG; CMDHINST\NPATH-Event Clicked/selected - ~Cancel  1002; ; <NPATH\1002.0>
+1997-01-11; 07:07:56; GARY L. ROBINSON; CHG; CMDHINST\NPATH-Event Clicked/selected - C~ontinue  1001; ; <NPATH\1001.0>
+1997-01-11; 07:11:12; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-11; 07:13:24; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-11; 07:28:44; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-11; 07:30:39; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-11; 07:38:47; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-11; 07:40:28; GARY L. ROBINSON; CHG; CMDHINST\NPATH-Event Clicked/selected - C~ontinue  1001; ; <NPATH\1001.0>
+1997-01-11; 07:41:36; GARY L. ROBINSON; CHG; CMDHINST\NPATH-Event Clicked/selected - C~ontinue  1001; ; <NPATH\1001.0>
+1997-01-11; 07:50:45; GARY L. ROBINSON; CHG; CMDHINST\NPATH-Event Clicked/selected - C~ontinue  1001; ; <NPATH\1001.0>
+1997-01-11; 08:12:39; GARY L. ROBINSON; CHG; CMDHINST\NPATH-Event Clicked/selected - C~ontinue  1001; ; <NPATH\1001.0>
+1997-01-11; 08:15:48; GARY L. ROBINSON; CHG; CMDHINST\NPATH-Event Clicked/selected - C~ontinue  1001; ; <NPATH\1001.0>
+1997-01-11; 08:20:54; GARY L. ROBINSON; CHG; CMDHINST\Main-Form layout; ; <Main\Form>
+1997-01-11; 08:21:45; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-11; 21:19:55; GARY L. ROBINSON; ADD; CMDHINST\Main-Form events - Opened; ; <Main\Form.1>
+1997-01-11; 21:24:48; GARY L. ROBINSON; CHG; CMDHINST\Main-Form events - Opened; ; <Main\Form.1>
+1997-01-11; 21:25:44; GARY L. ROBINSON; CHG; CMDHINST\Main-Form events - Opened; ; <Main\Form.1>
+1997-01-11; 21:28:05; GARY L. ROBINSON; CHG; CMDHINST\Main-Form events - Opened; ; <Main\Form.1>
+1997-01-11; 21:28:31; GARY L. ROBINSON; CHG; CMDHINST\Main-Form events - Opened; ; <Main\Form.1>
+1997-01-11; 21:46:08; GARY L. ROBINSON; CHG; CMDHINST\Main-Form events - Opened; ; <Main\Form.1>
+1997-01-11; 21:58:28; GARY L. ROBINSON; CHG; CMDHINST\Main-Form layout; ; <Main\Form>
+1997-01-11; 22:00:52; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Form events, Opened; ; <Main\Form.1>
+1997-01-11; 22:01:38; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Form events, Opened; ; <Main\Form.1>
+1997-01-12; 08:19:07; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Cancel  1000, Clicked/selected; ; <Main\1000.0>
+1997-01-12; 09:06:05; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-12; 09:09:00; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-12; 09:13:21; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-12; 09:19:16; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-12; 09:45:15; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-12; 09:48:50; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-12; 12:47:52; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-12; 12:51:25; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-12; 12:52:06; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-12; 12:52:46; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-12; 13:05:50; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-12; 13:07:29; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-12; 13:08:57; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-12; 14:24:50; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-12; 14:41:40; GARY L. ROBINSON; ADD; CMDHINST\NPATH-Form events - Opened; ; <NPATH\Form.1>
+1997-01-12; 23:59:52; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-13; 00:07:20; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-13; 00:09:45; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-13; 00:09:55; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-13; 00:33:07; GARY L. ROBINSON; CHG; CMDHINST\NPATH-Event Clicked/selected - C~ontinue  1001; ; <NPATH\1001.0>
+1997-01-13; 06:52:34; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-13; 16:53:06; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-13; 16:54:34; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-13; 17:11:03; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-13; 20:05:58; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-13; 20:43:05; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-13; 23:53:00; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-13; 23:53:29; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-13; 23:54:20; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-13; 23:54:50; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-14; 00:32:50; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-14; 00:36:17; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-14; 00:39:52; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-14; 00:40:55; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-14; 00:46:42; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-14; 00:51:32; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-14; 00:52:33; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-14; 00:56:18; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-14; 00:58:03; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-14; 01:00:06; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-14; 01:00:45; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-14; 01:01:32; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-14; 01:02:14; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-14; 01:21:49; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-14; 01:22:46; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-14; 01:23:41; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-14; 01:24:27; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-14; 01:27:27; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-14; 02:10:56; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-14; 02:11:02; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-14; 02:15:32; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-14; 02:21:49; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-14; 04:21:03; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-14; 04:27:27; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-14; 04:30:49; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-14; 04:32:03; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-14; 04:32:28; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-14; 04:37:14; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-14; 04:39:14; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Form events, Opened; ; <Main\Form.1>
+1997-01-14; 04:39:46; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-14; 04:42:50; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-14; 04:44:00; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-14; 04:52:55; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-14; 04:55:44; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-14; 05:00:09; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-14; 05:00:24; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-14; 05:02:25; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-14; 05:02:57; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-14; 05:08:05; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-14; 05:10:31; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-14; 05:28:35; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-14; 05:35:07; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-14; 05:37:04; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-14; 05:38:57; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-14; 05:41:47; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-14; 05:42:30; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-14; 05:44:43; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-14; 05:58:01; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-14; 23:10:48; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-14; 23:13:29; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-14; 23:59:23; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 00:01:10; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-15; 00:05:01; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-15; 00:13:52; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 00:16:11; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-15; 00:31:01; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-15; 03:53:35; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-15; 04:19:42; GARY L. ROBINSON; CHG; CMDHINST\Main-Form layout; ; <Main\Form>
+1997-01-15; 05:11:25; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 05:11:46; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-15; 05:13:42; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-15; 05:14:08; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 05:50:33; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 06:19:21; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-15; 06:25:35; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-15; 06:30:24; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-15; 06:39:10; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-15; 06:41:42; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-15; 06:46:41; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 06:47:05; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 06:48:02; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 06:48:21; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 06:52:19; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 06:59:32; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 07:04:08; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 07:06:53; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 07:13:10; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 07:20:08; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 07:20:59; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 07:40:28; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 07:45:38; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 07:48:22; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-15; 07:53:17; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-15; 07:56:13; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 07:58:08; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 07:58:42; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-15; 08:01:26; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 17:40:44; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 17:42:25; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 17:43:40; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 17:50:54; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 17:55:28; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 17:56:13; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 17:56:29; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 18:21:58; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 18:31:49; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 18:38:08; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 18:38:35; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-15; 18:42:35; GARY L. ROBINSON; CHG; CMDHINST\Main-Form layout; ; <Main\Form>
+1997-01-15; 18:49:31; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-15; 18:49:53; GARY L. ROBINSON; CHG; CMDHINST\Main-Form layout; ; <Main\Form>
+1997-01-15; 18:52:10; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-15; 18:52:52; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-15; 19:05:44; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-15; 19:08:27; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-16; 01:46:50; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-16; 01:47:27; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-16; 02:35:07; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-16; 02:37:19; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-16; 07:28:33; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-16; 07:29:50; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-16; 07:31:05; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-17; 03:24:11; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-17; 05:03:51; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-17; 05:04:30; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-17; 05:40:12; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-17; 05:44:16; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-17; 05:47:56; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-17; 06:00:31; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-17; 06:02:08; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-17; 06:08:39; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-17; 06:09:45; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-17; 06:10:53; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-17; 06:13:45; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-17; 06:20:36; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-17; 06:22:20; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-17; 06:25:53; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-17; 06:31:52; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-17; 06:33:26; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-17; 06:34:07; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-17; 06:47:07; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-17; 06:48:23; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-17; 06:49:51; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-17; 06:50:29; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-17; 06:54:44; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-17; 07:27:25; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-18; 03:53:32; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-18; 05:40:28; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-18; 17:55:17; GARY L. ROBINSON; CHG; CMDHINST\Main-Form layout; ; <Main\Form>
+1997-01-19; 03:28:44; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-19; 03:30:06; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-19; 03:30:57; GARY L. ROBINSON; CHG; CMDHINST\Main-Form layout; ; <Main\Form>
+1997-01-19; 09:16:08; GARY L. ROBINSON; CHG; CMDHINST\Main-Form layout; ; <Main\Form>
+1997-01-20; 00:07:32; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-20; 00:08:16; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-20; 00:09:56; GARY L. ROBINSON; CHG; CMDHINST\Main-Form layout; ; <Main\Form>
+1997-01-20; 00:11:32; GARY L. ROBINSON; CHG; CMDHINST\Main-Form layout; ; <Main\Form>
+1997-01-20; 02:33:16; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-20; 03:55:27; GARY L. ROBINSON; CHG; CMDHINST\Main-Form layout; ; <Main\Form>
+1997-01-20; 03:57:09; GARY L. ROBINSON; CHG; CMDHINST\NPATH-Form events - Opened; ; <NPATH\Form.1>
+1997-01-20; 03:59:58; GARY L. ROBINSON; CHG; CMDHINST\NPATH-Form events - Opened; ; <NPATH\Form.1>
+1997-01-20; 04:01:59; GARY L. ROBINSON; CHG; CMDHINST\NPATH-Form events - Opened; ; <NPATH\Form.1>
+1997-01-24; 02:12:12; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Form events, Opened; ; <Main\Form.1>
+1997-01-24; 02:14:10; GARY L. ROBINSON; CHG; CMDHINST\Main-Form layout; ; <Main\Form>
+1997-01-24; 02:14:10; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Procedure files, global.h; ; <SUBPROCS\global.h>
+1997-01-24; 02:22:31; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Install  1002, Clicked/selected; ; <Main\1002.0>
+1997-01-24; 02:28:46; GARY L. ROBINSON; CHG; CMDHINST\Main-Event ~Uninstall  1001, Clicked/selected; ; <Main\1001.0>
+1997-01-24; 02:33:42; GARY L. ROBINSON; CHG; CMDHINST\Main-Form layout; ; <Main\Form>
+1997-01-24; 02:34:33; GARY L. ROBINSON; CHG; CMDHINST\Main-Form layout; ; <Main\Form>
+1997-01-24; 02:38:26; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-24; 03:00:31; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-24; 07:19:49; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-24; 07:22:23; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-24; 07:22:53; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-24; 07:52:13; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-24; 08:10:16; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-24; 08:13:46; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-24; 08:35:58; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-24; 18:00:22; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-24; 18:01:04; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-24; 18:09:27; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-01-24; 18:15:34; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-01-26; 05:01:49; GARY L. ROBINSON; CHG; CMDHINST\Main-Form layout; ; <Main\Form>
+1997-01-26; 05:03:37; GARY L. ROBINSON; CHG; CMDHINST\Main-Form layout; ; <Main\Form>
+1997-07-26; 07:00:28; GARY L. ROBINSON; CHG; ZZINST\Main-Form layout; ; <Main\Form>
+1997-07-26; 07:00:28; GARY L. ROBINSON; CHG; ZZINST\Main-Form help info; ; <Main\Form.fin>
+1997-07-26; 07:01:58; GARY L. ROBINSON; CHG; ZZINST\Main-Form events - Opened; ; <Main\Form.1>
+1997-07-26; 07:09:17; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-07-26; 07:17:44; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-07-26; 07:26:33; GARY L. ROBINSON; CHG; ZZINST\NPATH-Form help info; ; <NPATH\Form.fin>
+1997-08-11; 07:11:37; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-11; 07:18:55; GARY L. ROBINSON; CHG; ZZINST\Main-Form layout; ; <Main\Form>
+1997-08-11; 07:25:01; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-11; 07:30:10; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-11; 07:38:28; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-11; 07:57:27; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-11; 07:58:34; GARY L. ROBINSON; ADD; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-11; 08:11:59; GARY L. ROBINSON; ADD; ZZINST\NEWCFG-Form events - Opened; ; <NEWCFG\Form.1>
+1997-08-11; 08:12:03; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-11; 08:12:03; GARY L. ROBINSON; ADD; ZZINST\NEWCFG-Form help info; ; <NEWCFG\Form.fin>
+1997-08-11; 08:14:00; GARY L. ROBINSON; CHG; ZZINST\Main-Code sections - Extra include files; ; <Main\Form.34>
+1997-08-11; 08:14:19; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-11; 08:21:10; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-11; 08:22:40; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-11; 08:24:03; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-11; 08:24:44; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-11; 08:30:53; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-11; 08:31:41; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-11; 08:35:09; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-11; 08:36:43; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-11; 08:37:29; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-11; 08:42:15; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-11; 08:42:15; GARY L. ROBINSON; DEL; ZZINST\NEWCFG-Symbols; ; <NEWCFG\Form.sym>
+1997-08-11; 08:43:03; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-11; 08:44:09; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-11; 08:44:33; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-11; 08:45:58; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-11; 08:47:14; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-11; 08:55:05; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-11; 08:59:56; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-11; 09:03:07; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-11; 09:04:00; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-11; 09:05:45; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-11; 09:07:59; GARY L. ROBINSON; ADD; ZZINST\NEWCFG-Event Clicked/selected - Update  2001; ; <NEWCFG\2001.0>
+1997-08-11; 09:09:00; GARY L. ROBINSON; ADD; ZZINST\NEWCFG-Code sections - Extra include files; ; <NEWCFG\Form.34>
+1997-08-11; 09:09:29; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Code sections - Extra include files; ; <NEWCFG\Form.34>
+1997-08-11; 09:12:24; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Code sections - Extra include files; ; <NEWCFG\Form.34>
+1997-08-11; 09:14:49; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Code sections - Extra include files; ; <NEWCFG\Form.34>
+1997-08-11; 09:16:30; GARY L. ROBINSON; ADD; ZZINST\NEWCFG-Code sections - Top of window procedure; ; <NEWCFG\Form.37>
+1997-08-11; 09:17:17; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Code sections - Top of window procedure; ; <NEWCFG\Form.37>
+1997-08-11; 09:19:32; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Code sections - Extra include files; ; <NEWCFG\Form.34>
+1997-08-11; 09:29:56; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-11; 09:40:13; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-11; 09:45:26; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-11; 09:45:57; GARY L. ROBINSON; ADD; ZZINST\NEWCFG-Event Clicked/selected - Do not Update  2004; ; <NEWCFG\2004.0>
+1997-08-11; 09:46:11; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Event Clicked/selected - Update  2001; ; <NEWCFG\2001.0>
+1997-08-11; 09:50:22; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-11; 09:52:04; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Event Clicked/selected - Update  2001; ; <NEWCFG\2001.0>
+1997-08-11; 09:52:17; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Event Clicked/selected - Do not Update  2004; ; <NEWCFG\2004.0>
+1997-08-11; 09:52:55; GARY L. ROBINSON; ADD; ZZINST\NEWCFG-Event Clicked/selected - ~Cancel  2002; ; <NEWCFG\2002.0>
+1997-08-11; 10:00:51; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-11; 10:08:33; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-11; 10:34:30; GARY L. ROBINSON; CHG; ZZINST\NPATH-Form layout; ; <NPATH\Form>
+1997-08-11; 10:37:57; GARY L. ROBINSON; CHG; ZZINST\NPATH-Form layout; ; <NPATH\Form>
+1997-08-11; 10:39:33; GARY L. ROBINSON; CHG; ZZINST\NPATH-Form layout; ; <NPATH\Form>
+1997-08-11; 10:59:00; GARY L. ROBINSON; CHG; ZZINST\NPATH-Form layout; ; <NPATH\Form>
+1997-08-11; 11:04:37; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-11; 11:18:27; GARY L. ROBINSON; ADD; ZZINST\AREYOU-Form layout; ; <AREYOU\Form>
+1997-08-11; 11:30:09; GARY L. ROBINSON; CHG; ZZINST\AREYOU-Form layout; ; <AREYOU\Form>
+1997-08-11; 11:30:09; GARY L. ROBINSON; ADD; ZZINST\AREYOU-Form help info; ; <AREYOU\Form.fin>
+1997-08-11; 11:31:31; GARY L. ROBINSON; CHG; ZZINST\Main-Code sections - Extra include files; ; <Main\Form.34>
+1997-08-11; 11:42:40; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-08-11; 11:43:05; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-08-11; 11:46:48; GARY L. ROBINSON; ADD; ZZINST\AREYOU-Event Clicked/selected - ~Continue with Uninstallation  1000; ; <AREYOU\1000.0>
+1997-08-11; 11:47:40; GARY L. ROBINSON; ADD; ZZINST\AREYOU-Code sections - Extra include files; ; <AREYOU\Form.34>
+1997-08-11; 11:48:45; GARY L. ROBINSON; ADD; ZZINST\AREYOU-Form events - Opened; ; <AREYOU\Form.1>
+1997-08-11; 11:51:03; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-08-11; 11:54:51; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-08-11; 11:55:08; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-08-11; 11:56:57; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-11; 12:00:07; GARY L. ROBINSON; CHG; ZZINST\AREYOU-Event Clicked/selected - ~Continue with Uninstallation  1000; ; <AREYOU\1000.0>
+1997-08-11; 12:00:23; GARY L. ROBINSON; ADD; ZZINST\AREYOU-Event Clicked/selected - Cancel ~Uninstallation  1001; ; <AREYOU\1001.0>
+1997-08-11; 12:01:18; GARY L. ROBINSON; CHG; ZZINST\AREYOU-Form events - Opened; ; <AREYOU\Form.1>
+1997-08-15; 07:48:11; GARY L. ROBINSON; CHG; ZZINST\Main-Form layout; ; <Main\Form>
+1997-08-15; 07:51:52; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-15; 16:36:17; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-15; 16:45:22; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-15; 16:50:08; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-15; 16:58:57; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-15; 16:59:26; GARY L. ROBINSON; CHG; ZZINST\Main-Form layout; ; <Main\Form>
+1997-08-15; 17:08:56; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-15; 18:33:15; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-16; 08:21:54; GARY L. ROBINSON; CHG; ZZINST\Main-Form layout; ; <Main\Form>
+1997-08-16; 08:24:48; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-16; 08:25:21; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-16; 08:27:01; GARY L. ROBINSON; CHG; ZZINST\AREYOU-Form layout; ; <AREYOU\Form>
+1997-08-16; 08:36:02; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-16; 08:38:42; GARY L. ROBINSON; CHG; ZZINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-17; 01:35:49; GARY L. ROBINSON; CHG; ZZINST\Main-Form layout; ; <Main\Form>
+1997-08-17; 02:11:52; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-17; 02:14:34; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-08-17; 02:20:19; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-17; 02:21:20; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-08-17; 03:48:54; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-08-17; 04:14:41; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-17; 04:16:17; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-08-17; 05:07:56; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-08-17; 05:31:13; GARY L. ROBINSON; CHG; ZZINST\Main-Form layout; ; <Main\Form>
+1997-08-17; 05:33:00; GARY L. ROBINSON; CHG; ZZINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-08-18; 01:47:35; GARY L. ROBINSON; CHG; CMDHINST\AREYOU-Form layout; ; <AREYOU\Form>
+1997-08-18; 01:47:35; GARY L. ROBINSON; CHG; CMDHINST\AREYOU-Form help info; ; <AREYOU\Form.fin>
+1997-08-18; 01:48:13; GARY L. ROBINSON; CHG; CMDHINST\NPATH-Form help info; ; <NPATH\Form.fin>
+1997-08-18; 01:49:20; GARY L. ROBINSON; CHG; CMDHINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-18; 01:49:44; GARY L. ROBINSON; CHG; CMDHINST\NEWCFG-Form help info; ; <NEWCFG\Form.fin>
+1997-08-18; 01:50:32; GARY L. ROBINSON; CHG; CMDHINST\Main-Form help info; ; <Main\Form.fin>
+1997-08-18; 01:52:07; GARY L. ROBINSON; CHG; CMDHINST\Main-Form layout; ; <Main\Form>
+1997-08-18; 02:02:02; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-18; 02:06:25; GARY L. ROBINSON; CHG; CMDHINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-08-18; 02:21:46; GARY L. ROBINSON; CHG; CMDHINST\Main-Form events - Opened; ; <Main\Form.1>
+1997-08-18; 06:22:39; GARY L. ROBINSON; CHG; STATINST\AREYOU-Form help info; ; <AREYOU\Form.fin>
+1997-08-18; 06:26:19; GARY L. ROBINSON; CHG; STATINST\NEWCFG-Form layout; ; <NEWCFG\Form>
+1997-08-18; 06:26:28; GARY L. ROBINSON; CHG; STATINST\NEWCFG-Form help info; ; <NEWCFG\Form.fin>
+1997-08-18; 06:26:48; GARY L. ROBINSON; CHG; STATINST\NPATH-Form help info; ; <NPATH\Form.fin>
+1997-08-18; 06:27:39; GARY L. ROBINSON; CHG; STATINST\Main-Form layout; ; <Main\Form>
+1997-08-18; 06:27:39; GARY L. ROBINSON; CHG; STATINST\Main-Form help info; ; <Main\Form.fin>
+1997-08-18; 06:33:17; GARY L. ROBINSON; CHG; STATINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-18; 06:36:17; GARY L. ROBINSON; CHG; STATINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-08-18; 06:37:20; GARY L. ROBINSON; CHG; STATINST\Main-Form events - Opened; ; <Main\Form.1>
+1997-08-21; 06:34:42; GARY L. ROBINSON; CHG; STATINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-21; 06:35:49; GARY L. ROBINSON; CHG; STATINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-08-21; 06:36:28; GARY L. ROBINSON; CHG; STATINST\Main-Form layout; ; <Main\Form>
+1997-08-21; 07:12:04; GARY L. ROBINSON; CHG; STATINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-21; 07:13:08; GARY L. ROBINSON; CHG; STATINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-08-21; 07:13:11; GARY L. ROBINSON; CHG; STATINST\Main-Form layout; ; <Main\Form>
+1997-08-22; 02:54:52; GARY L. ROBINSON; CHG; STATINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>
+1997-08-22; 02:55:38; GARY L. ROBINSON; CHG; STATINST\Main-Event Clicked/selected - ~Uninstall  1001; ; <Main\1001.0>
+1997-08-22; 02:55:42; GARY L. ROBINSON; CHG; STATINST\Main-Form layout; ; <Main\Form>
+1997-09-10; 02:51:19; GARY L. ROBINSON; CHG; STATINST\Main-Event Clicked/selected - ~Install  1002; ; <Main\1002.0>

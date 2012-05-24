@@ -1,0 +1,26 @@
+/* Form events - Opened */
+
+{
+INT x_screen, y_screen, x_offset, y_offset;
+POINTL pt;
+SWP swp;
+WinQueryWindowPos( hwndDlg, &swp );     
+WinQueryPointerPos( HWND_DESKTOP, &pt ); 
+swp.x = pt.x - (swp.cx /2);             
+swp.y = pt.y - (swp.cy /2);
+x_screen = WinQuerySysValue( HWND_DESKTOP, SV_CXSCREEN );
+y_screen = WinQuerySysValue( HWND_DESKTOP, SV_CYSCREEN );
+x_offset = x_screen*.005;
+y_offset = y_screen*.005;
+if ( swp.cx + swp.x  > x_screen )  
+    swp.x = x_screen - (swp.cx + x_offset);
+if ( swp.x <= 0 )                            
+    swp.x = x_offset;
+if ( swp.y + swp.cy > y_screen )   
+    swp.y = y_screen - (swp.cy + y_offset);
+if ( swp.y <= 0 )                            
+    swp.y = y_offset;
+WinSetWindowPos(hwndDlg, HWND_TOP, 
+                swp.x, swp.y, 0, 0,
+		SWP_ACTIVATE | SWP_MOVE | SWP_SHOW );
+}

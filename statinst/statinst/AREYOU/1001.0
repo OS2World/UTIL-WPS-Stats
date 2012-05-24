@@ -1,0 +1,3 @@
+/* Event Clicked/selected - Cancel ~Uninstallation  1001 */
+
+WinPostMsg(hwndDlg, WM_CLOSE, 0, 0);

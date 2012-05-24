@@ -1,0 +1,25 @@
+Stack Allocation = 32768 bytes
+
+ cmdhinst.exe
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000B2C8H CODE32                 CODE 32-bit
+ 0001:0000B2C8 000000030H _MSGSEG32              CODE 32-bit
+ 0002:00000000 000000010H CONST32_RO             CONST 32-bit
+ 0003:00000000 000001290H DATA32                 DATA 32-bit
+ 0003:00001290 000000000H CTOR_DTOR1             DATA 32-bit
+ 0003:00001290 000000000H CTOR_DTOR2             DATA 32-bit
+ 0003:00001290 000000000H CTOR_DTOR3             DATA 32-bit
+ 0003:00001290 0000001C0H CONST32                CONST 32-bit
+ 0003:00001450 00000000CH EDC1                   EDC_CLASS 32-bit
+ 0003:0000145C 00000033CH EDC2                   EDC_CLASS 32-bit
+ 0003:00001798 000000004H EDC3                   EDC_CLASS 32-bit
+ 0003:0000179C 000000000H BSS32                  BSS 32-bit
+ 0003:0000179C 000001A1CH c_common               BSS 32-bit
+ 0003:000031C0 000008000H STACK32                STACK 32-bit
+
+ Origin   Group
+ 0000:0   FLAT
+ 0003:0   DGROUP
+
+Program entry point at 0001:000045E8

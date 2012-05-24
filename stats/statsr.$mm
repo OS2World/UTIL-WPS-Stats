@@ -1,0 +1,47 @@
+:TARGET.SUFFIXES
+:DEPENDENCY..C .RC .obj .res 
+:TARGET.all
+:DEPENDENCY.
+.\statsr.dll
+:RULE..C.obj
+:ACTION.Compile::C++ Compiler
+:COMMAND.
+icc.exe /Ti /Ge- /C %s
+:RULE.{H:\stats}.C.obj
+:ACTION.Compile::C++ Compiler
+:COMMAND.
+icc.exe /Ti /Ge- /C %s
+:RULE..RC.res
+:ACTION.Compile::Resource Compiler
+:COMMAND.
+rc.exe -r %s %|dpfF.RES
+:RULE.{H:\stats}.RC.res
+:ACTION.Compile::Resource Compiler
+:COMMAND.
+rc.exe -r %s %|dpfF.RES
+:TARGET..\statsr.dll
+:DEPENDENCY.
+.\MYOBJRES.obj
+.\MYOBJRES.res
+{$(LIB)}statsr.def
+statsr.mak
+:ACTION.Link::Linker
+:COMMAND.
+icc.exe @<<
+ /B" /de /st:524288"
+ /Festatsr.dll 
+ statsr.def
+ .\MYOBJRES.obj
+<<
+:ACTION.Bind::Resource Bind
+:COMMAND.
+rc.exe .\MYOBJRES.res statsr.dll
+:TARGET..\MYOBJRES.obj
+:DEPENDENCY.
+H:\stats\MYOBJRES.C
+statsr.mak
+:TARGET..\MYOBJRES.res
+:DEPENDENCY.
+H:\stats\MYOBJRES.RC
+{H:\stats;$(INCLUDE)}stats.ih
+statsr.mak

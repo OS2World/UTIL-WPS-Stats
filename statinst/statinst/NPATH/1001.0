@@ -1,0 +1,6 @@
+/* Event Clicked/selected - C~ontinue  1001 */
+
+createFolders(installDIR);
+/* DosCreateDir(installDIR, pbuf);*/
+PATHRet = 1;
+WinDismissDlg( hwndDlg, TRUE );

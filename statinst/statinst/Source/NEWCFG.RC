@@ -1,0 +1,40 @@
+#include "NEWCFG.RCH"
+
+DLGTEMPLATE ID_NEWCFGFORM PRELOAD MOVEABLE
+BEGIN
+  DIALOG    "Do you want to update your config.sys file?", ID_NEWCFGFORM,
+            0,0,230,110,
+            0,  FCF_NOBYTEALIGN | FCF_BORDER | FCF_TITLEBAR | FCF_SYSMENU | FCF_ICON 
+  BEGIN
+    CONTROL "The program needs to update your config.sys file.  Either press UPDATE to do so, DO NOT UPDATE to instead save the changes to config.$s$, or CANCEL to abort the installation.", 2000,
+            10,62,210,42,
+            WC_STATIC, WS_VISIBLE | WS_PARENTCLIP | WS_SYNCPAINT | 0x00006101 
+            PRESPARAMS PP_FOREGROUNDCOLOR,0xff
+            PRESPARAMS PP_BACKGROUNDCOLOR,0xcccccc
+            PRESPARAMS PP_FONTNAMESIZE,"12.Times New Roman"
+    CONTROL "Update", 2001,
+            24,8,48,14,
+            WC_BUTTON, WS_VISIBLE | WS_PARENTCLIP | WS_SYNCPAINT | WS_TABSTOP | 0x00000800 
+    CONTROL "~Cancel", 2002,
+            158,8,48,14,
+            WC_BUTTON, WS_VISIBLE | WS_PARENTCLIP | WS_SYNCPAINT | WS_TABSTOP | 0x00000800 
+    CONTROL "Do not Update", 2004,
+            78,8,74,14,
+            WC_BUTTON, WS_VISIBLE | WS_PARENTCLIP | WS_SYNCPAINT | WS_TABSTOP | 0x00000800 
+    CONTROL "All it does it to add a reference to the LIBPATH section for the directory that the program and its files are installed to (which is required for the program to run properly).", 1000,
+            10,26,210,36,
+            WC_STATIC, WS_VISIBLE | WS_PARENTCLIP | WS_SYNCPAINT | 0x00006101 
+            PRESPARAMS PP_FOREGROUNDCOLOR,0x0
+            PRESPARAMS PP_BACKGROUNDCOLOR,0xcccccc
+            PRESPARAMS PP_FONTNAMESIZE,"10.Helv"
+    CONTROL "", 1001,
+            6,4,218,106,
+            WC_STATIC, WS_VISIBLE | WS_PARENTCLIP | WS_SYNCPAINT | 0x00000002 
+            PRESPARAMS PP_BACKGROUNDCOLOR,0xcccccc
+  END
+END
+
+HELPSUBTABLE ID_NEWCFGFORM
+BEGIN
+END
+ICON ID_NEWCFGFORM "H:\\STATINST\\STATINST\\STATINST.ICO"

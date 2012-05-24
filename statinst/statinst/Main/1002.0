@@ -1,0 +1,278 @@
+/* Event Clicked/selected - ~Install  1002 */
+
+
+INT tlen;
+CHAR upath[GLMAXPATH];
+USHORT usReturn;
+HWND hNewFrame;
+CHAR cfig[] = " :\\config.sys";
+CHAR cfigTMP[] = " :\\config.$s$";
+CHAR cfigBAKUP[] = " :\\config.sta";
+ULONG bdri;
+HOBJECT destobj, origobj;
+CHAR cPath[GLMAXPATH];
+CHAR cmdDLL[GLMAXPATH];
+CHAR rcstr[GLMAXPATH];
+
+
+
+
+PrfQueryProfileString(HINI_USERPROFILE, 
+                      "StatsIsInstalled", 
+                      "InstallationPath",
+		      "", cmdhrinstall, 
+		      CCHMAXPATH );
+		      
+		      
+if( strlen(cmdhrinstall) != 0 )		      
+   {
+   msgOK("Attention! Stats seems to already be installed!", "Stats must be uninstalled before it can be installed again.");
+   return(0);
+   }		          
+
+
+DosQuerySysInfo(QSV_BOOT_DRIVE, QSV_BOOT_DRIVE, (PVOID)&bdri, sizeof(bdri));
+
+cfig[0] = (CHAR)(bdri + '@');
+cfigTMP[0] = (CHAR)(bdri + '@');
+cfigBAKUP[0] = (CHAR)(bdri + '@');
+
+tlen = (LONG)WinQueryDlgItemTextLength(hwndDlg, 1003);
+WinQueryDlgItemText(hwndDlg, 1003, sizeof(installDIR), installDIR);
+WinQueryDlgItemText(hwndDlg, 1004, sizeof(rcstr), rcstr);
+
+if (tlen < 2)
+   {
+   msgOK("Attention! Invalid path.", "You must enter a valid path to install Stats!.");
+   return(0);
+   }  
+
+
+PATHRet = 1;
+
+while( (WinQueryObject(installDIR) == NULLHANDLE) && PATHRet == 1 )
+      {
+      hNewFrame = OpenNPATH(hwndDlg, 0);
+      usReturn = (USHORT) WinProcessDlg(hNewFrame);
+      }
+
+if( PATHRet == 0 )
+   return(0);
+
+
+UPDATECONFIG = FALSE;
+ISCANCELLED = TRUE;
+
+{
+   USHORT usReturn;
+   HWND hNewFrame;
+   hNewFrame = OpenNEWCFG(hwndDlg, 0);
+   usReturn = (USHORT) WinProcessDlg(hNewFrame);
+}
+
+if( ISCANCELLED )
+   {
+   return(0);
+   }
+
+WinEnableWindow(WinWindowFromID(hwndDlg, 1000), FALSE);
+WinEnableWindow(WinWindowFromID(hwndDlg, 1001), FALSE);
+WinEnableWindow(WinWindowFromID(hwndDlg, 1002), FALSE);
+
+
+strcpy(cmdDLL, installDIR);
+if( cmdDLL[strlen(cmdDLL)-1] != '\\' )
+   strcat(cmdDLL, "\\");
+strcat(cmdDLL, "Stats.dll");
+
+
+//****** Can't install into same path as installing from ******
+_getcwd(cPath, GLMAXPATH);
+if( (strlen(cPath) == 2) && (cPath[1] == ':') )
+   strcat(cPath, "\\");
+if( stricmp(installDIR, cPath) == 0 )
+   {
+   }
+else
+   {   
+   //***************  Copy Stats.DLL **********
+   _getcwd(cPath, GLMAXPATH);
+   if( cPath[strlen(cPath)-1] != '\\' )
+      strcat(cPath, "\\");
+   strcat(cPath, "Stats.dll");   
+
+   origobj = WinQueryObject(cPath);
+   if( origobj == NULLHANDLE )
+      {
+      DosBeep(700, 100);
+      msgOK("Error!", "Could not find Stats.dll. Installation aborted.");
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1000), TRUE);
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1001), TRUE);
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1002), TRUE);
+      return(0);
+      }
+
+   destobj = WinQueryObject(installDIR);
+   if( destobj == NULLHANDLE )
+      {
+      DosBeep(700, 100);
+      msgOK(installDIR, "Could not find destination path. Installation aborted.");
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1000), TRUE);
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1001), TRUE);
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1002), TRUE);
+      return(0);
+      }
+
+   if( WinCopyObject(origobj, destobj, 0) == NULLHANDLE )
+      {
+      DosBeep(700, 100);
+      msgOK(installDIR, "Could not copy Stats.dll to destination path (File may already exist). Installation aborted.");
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1000), TRUE);
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1001), TRUE);
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1002), TRUE);
+      return(0);
+      }
+
+
+
+   //***************  Copy STATSR.DLL **********
+   _getcwd(cPath, GLMAXPATH);
+   if( cPath[strlen(cPath)-1] != '\\' )
+      strcat(cPath, "\\");
+   strcat(cPath, "statsr.dll");   
+   
+   origobj = WinQueryObject(cPath);
+   if( origobj == NULLHANDLE )
+      {
+      DosBeep(700, 100);
+      msgOK("Error!", "Could not find statsr.dll. Installation aborted.");
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1000), TRUE);
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1001), TRUE);
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1002), TRUE);
+      return(0);
+      }
+
+   destobj = WinQueryObject(installDIR);
+   if( destobj == NULLHANDLE )
+      {
+      DosBeep(700, 100);
+      msgOK(installDIR, "Could not find destination path. Installation aborted.");
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1000), TRUE);
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1001), TRUE);
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1002), TRUE);
+      return(0);
+      }
+
+   if( WinCopyObject(origobj, destobj, 0) == NULLHANDLE )
+      {
+      DosBeep(700, 100);
+      msgOK(installDIR, "Could not copy statsr.dll to destination path (File may already exist). Installation aborted.");
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1000), TRUE);
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1001), TRUE);
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1002), TRUE);
+      return(0);
+      }
+
+
+   //***************  Copy STATINST.EXE **********
+   _getcwd(cPath, GLMAXPATH);
+   if( cPath[strlen(cPath)-1] != '\\' )
+      strcat(cPath, "\\");
+   strcat(cPath, "statinst.exe");   
+   
+   origobj = WinQueryObject(cPath);
+   if( origobj == NULLHANDLE )
+      {
+      DosBeep(700, 100);
+      msgOK("Error!", "Could not find statinst.exe. Installation aborted.");
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1000), TRUE);
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1001), TRUE);
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1002), TRUE);
+      return(0);
+      }
+
+   destobj = WinQueryObject(installDIR);
+   if( destobj == NULLHANDLE )
+      {
+      DosBeep(700, 100);
+      msgOK(installDIR, "Could not find destination path. Installation aborted.");
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1000), TRUE);
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1001), TRUE);
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1002), TRUE);
+      return(0);
+      }
+
+   if( WinCopyObject(origobj, destobj, 0) == NULLHANDLE )
+      {
+      DosBeep(700, 100);
+      msgOK(installDIR, "Could not copy statinst.exe to destination path (File may already exist). Installation aborted.");
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1000), TRUE);
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1001), TRUE);
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1002), TRUE);
+      return(0);
+      }
+   }
+
+addToFile(cfig, cfigTMP, installDIR, "LIBPATH=");
+
+if( UPDATECONFIG )
+   rc = DosCopy(cfig, cfigBAKUP, DCPY_EXISTING);
+
+if( rc == 0 )
+   {
+   if( UPDATECONFIG )
+      {   
+      setFileAttrib(cfig, FILE_NORMAL);   
+      rc = DosCopy(cfigTMP, cfig, DCPY_EXISTING);
+      }
+   if( rc == 0 )
+      {
+      
+      WinRegisterObjectClass("stats", cmdDLL);
+      WinReplaceObjectClass("WPFolder", "stats", TRUE);
+      WinRegisterObjectClass("statsfile", cmdDLL);
+      WinReplaceObjectClass("WPDataFile", "statsfile", TRUE);
+      WinRegisterObjectClass("statsdisk", cmdDLL);
+      WinReplaceObjectClass("WPDisk", "statsdisk", TRUE);
+      
+      if( UPDATECONFIG )
+         {   
+         DosDelete(cfigTMP);
+         setFileAttrib(cfigBAKUP, FILE_NORMAL);   
+         }
+
+      PrfWriteProfileString(HINI_USERPROFILE, "StatsIsInstalled",
+       			    "InstallationPath", installDIR);  
+      PrfWriteProfileString(HINI_USERPROFILE, "StatsIsInstalled",
+       			    "rc", rcstr);  
+      if( UPDATECONFIG )
+         {		    
+         msgOK("Attention!", "Stats has been registered and installed! Reboot for it to be activated");
+         }
+      else
+         {   
+         msgOK("Attention!", "Stats has been registered! Update your LIBPATH statement in config.sys and Reboot for it to be activated");
+         }
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1000), TRUE);
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1001), TRUE);
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1002), TRUE);
+      exit(0);
+      }
+   else
+      {
+      msgOK("Error 1!", "installation failed! Could not update Config.sys properly so installation was aborted.");
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1000), TRUE);
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1001), TRUE);
+      WinEnableWindow(WinWindowFromID(hwndDlg, 1002), TRUE);
+      }
+   }
+else
+   {   
+   msgOK("Error! 2", "installation failed! Could not update Config.sys properly so installation was aborted.");
+   WinEnableWindow(WinWindowFromID(hwndDlg, 1000), TRUE);
+   WinEnableWindow(WinWindowFromID(hwndDlg, 1001), TRUE);
+   WinEnableWindow(WinWindowFromID(hwndDlg, 1002), TRUE);
+   }
+
+
+
