@@ -11,8 +11,13 @@ GNU GPL V2
 
 COMPILE TOOLS
 ==============
-- VISPRO/C
-- OS/2 Developer Toolkit
+* VISPRO/C
+* OS/2 Developer Toolkit
+* C
+* VisualAge for C
+* IBM RC
+* SOMCompiler
+* IBM Dialog Editor 
 
 
 AUTHORS
